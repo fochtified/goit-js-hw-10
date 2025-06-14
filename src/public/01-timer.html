@@ -10,14 +10,22 @@
     </head>
     <body>
         <div class="main-container">
-            <section class="intro-text">
+            <div class="go-home-wrapper">
                 <a href="./index.html" class="go-home trans-link">Go to home</a>
+            </div>
+            <section class="intro-text">
                 <h1>Timer</h1>
                 <p>Select a date</p>
             </section>
             <section class="timer-module">
                 <input type="text" id="datetime-picker" />
-                <button type="button" data-start>Start</button>
+                <button
+                    type="button"
+                    class="timer-btn standard-button"
+                    data-start
+                >
+                    Start
+                </button>
 
                 <div class="timer">
                     <div class="field">
@@ -39,5 +47,7 @@
                 </div>
             </section>
         </div>
+        <script type="module" src="/js/main.js"></script>
+        <script type="module" src="/js/01-timer.js"></script>
     </body>
 </html>

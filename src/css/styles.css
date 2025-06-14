@@ -5,9 +5,9 @@
   |============================
 */
 @import url("./reset.css");
-@import url("./vite-promo.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url("./header.css");
-@import url("./01-gallery.css");
+@import url("./01-timer.css");
 @import url("./02-form.css");
 
 *,
@@ -41,11 +41,15 @@
     margin: 0 auto;
 }
 
-.go-home {
-    padding: 20px 0;
+.go-home-wrapper {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
+    padding: 20px 0;
+}
+
+.go-home {
+    display: inline-flex;
+    align-items: center;
     gap: 40px;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -55,6 +59,10 @@
 .go-home:hover,
 .go-home:focus {
     color: #747bff;
+}
+
+.go-home:active {
+    color: #2d5bff;
 }
 
 .trans-link {
@@ -67,4 +75,30 @@
 
 .trans-js:hover {
     transform: rotate(180deg);
+}
+
+.standard-button {
+    font: inherit;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin-top: 16px;
+    background-color: #4e75ff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.standard-button:hover,
+.standard-button:focus {
+    background-color: #6c8cff;
+}
+
+.standard-button:active {
+    background-color: #2d5bff;
+}
+
+.standard-button:disabled {
+    background-color: #cecece;
+    color: #b0b0b0;
 }

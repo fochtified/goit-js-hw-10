@@ -10,12 +10,45 @@
     </head>
     <body>
         <div class="main-container">
-            <section class="intro-text">
+            <div class="go-home-wrapper">
                 <a href="./index.html" class="go-home trans-link">Go to home</a>
+            </div>
+            <section class="intro-text">
                 <h1>Snackbar</h1>
                 <p>Select delay and create sum notifs bozo</p>
             </section>
-            <section class="snackbar-module"></section>
+            <section class="snackbar-module">
+                <form class="form">
+                    <label>
+                        Delay (ms)
+                        <input type="number" name="delay" required />
+                    </label>
+
+                    <fieldset>
+                        <legend>State</legend>
+                        <label>
+                            <input
+                                type="radio"
+                                name="state"
+                                value="fulfilled"
+                                required
+                            />
+                            Fulfilled
+                        </label>
+                        <label>
+                            <input
+                                type="radio"
+                                name="state"
+                                value="rejected"
+                                required
+                            />
+                            Rejected
+                        </label>
+                    </fieldset>
+
+                    <button type="submit">Create notification</button>
+                </form>
+            </section>
         </div>
     </body>
 </html>

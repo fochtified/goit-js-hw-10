@@ -1,4 +1,4 @@
-console.log(`main.js loaded`);
+console.log(`main.js was succesfully loaded`);
 
 document.querySelectorAll("img.import-img[data-src]").forEach((img) => {
     const path = img.dataset.src;
