@@ -8,7 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import url("./header.css");
 @import url("./01-timer.css");
-@import url("./02-form.css");
+@import url("./02-snackbar.css");
 
 *,
 *::before,
@@ -30,6 +30,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
 }
 
 .main-margin {
@@ -101,4 +110,8 @@
 .standard-button:disabled {
     background-color: #cecece;
     color: #b0b0b0;
+}
+
+.intro-text-snackbar {
+    margin-bottom: 22px;
 }

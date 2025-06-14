@@ -13,18 +13,23 @@
             <div class="go-home-wrapper">
                 <a href="./index.html" class="go-home trans-link">Go to home</a>
             </div>
-            <section class="intro-text">
+            <section class="intro-text-snackbar">
                 <h1>Snackbar</h1>
-                <p>Select delay and create sum notifs bozo</p>
+                <p>Select delay and create notifications.</p>
             </section>
-            <section class="snackbar-module">
+            <section class="form-module">
                 <form class="form">
                     <label>
                         Delay (ms)
-                        <input type="number" name="delay" required />
+                        <input
+                            class="delayInput"
+                            type="number"
+                            name="delay"
+                            required
+                        />
                     </label>
 
-                    <fieldset>
+                    <fieldset class="promise-type">
                         <legend>State</legend>
                         <label>
                             <input
@@ -46,9 +51,13 @@
                         </label>
                     </fieldset>
 
-                    <button type="submit">Create notification</button>
+                    <button type="submit" class="form-btn standard-button">
+                        Create notification
+                    </button>
                 </form>
             </section>
         </div>
+        <script type="module" src="/js/main.js"></script>
+        <script type="module" src="/js/02-snackbar.js"></script>
     </body>
 </html>
