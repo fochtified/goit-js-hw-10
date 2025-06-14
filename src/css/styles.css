@@ -4,22 +4,67 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url("./reset.css");
+@import url("./vite-promo.css");
+@import url("./header.css");
+@import url("./01-gallery.css");
+@import url("./02-form.css");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+    color: #242424;
+    background-color: rgba(255, 255, 255, 0.87);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.main-margin {
+    margin-left: 75px;
+}
+
+.main-container {
+    max-width: 1128px;
+    margin: 0 auto;
+}
+
+.go-home {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+.go-home:hover,
+.go-home:focus {
+    color: #747bff;
+}
+
+.trans-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.trans-js {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.trans-js:hover {
+    transform: rotate(180deg);
 }
